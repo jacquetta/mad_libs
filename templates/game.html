@@ -11,9 +11,28 @@
     <body>
        <p>Choose a person, color, noun, and adjective</p>
        <form action="/madlib">
-       <label>Name a person:</label>
-       <input type="text" name="person">
-       
+       <div>
+            <label>Name a person:</label>
+            <input type="text" name="person">
+       </div>
+        <div>
+            <label>Choose a color:</label>
+            <select name="color">
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="Yellow">Yellow</option>
+            </select>
+        </div>
+        <div>
+            <label>Name a noun:</label>
+            <input type="text" name="noun">
+        </div>
+       <div>
+            <label>Name a adjective:</label>
+            <input type="text" name="adjective">
+       </div>
+       <input type="submit">
        </form>
     </body>
 </html>
