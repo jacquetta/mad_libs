@@ -9,8 +9,18 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+
         <p>There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
-            When {{ person }} went to pick it up, it burst into flames in a totally
+            When {{ person }} went to pick it up, it 
+            {% for i in range(verbs|length) %}
+                {{ verbs[i] }}
+                {% if i < verbs|length-1 %}
+                    , 
+                {% endif %}
+            {% endfor %} into flames in a totally
             {{ adjective }} way.</p>
+            <!--https://prod.liveshare.vsengsaas.visualstudio.com/join?534A817D35CACB45D43761B6D137B843C1A2--> 
     </body>
 </html>
+
+
